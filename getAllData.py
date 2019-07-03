@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 
 
 firsttime = True
-filepath = r'C:\data2016-2019-1.csv'
+filepath = r'C:\Users\azhar\time-series\data2016-2019-1.csv'
 
 def getData(targeturl, startdate):
 
@@ -83,7 +83,7 @@ def getData(targeturl, startdate):
 def getAllData():
     targeturl = 'http://ets.aeso.ca/ets_web/ip/Market/Reports/PublicSummaryAllReportServlet?beginDate={}&endDate={}&contentType=html'
     startDate =  datetime(2016, 1, 1)
-    endDate   =  datetime(2019,5,31)
+    endDate   =  datetime(2019,6,30)
     d1 = startDate
     i = 0
     while d1 < endDate:
